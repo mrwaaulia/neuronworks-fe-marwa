@@ -24,9 +24,7 @@ function MainContent() {
         <div className="relative ">
           <select className="rounded-lg text-[#333435] border border-gray-300 p-4 w-[211px] h-[56px] appearance-none">
             <option value="">Newest first</option>
-            <option value="">Newest first</option>
-            <option value="">Newest first</option>
-            <option value="">Newest first</option>
+            <option value="">Oldest first</option>
           </select>
           <CaretDown className="absolute right-5 top-4" size={24} />
         </div>
