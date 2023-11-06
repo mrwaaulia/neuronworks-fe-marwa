@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 function Header() {
@@ -58,49 +59,65 @@ function Header() {
         <div className="flex gap-6">
           <Link
             href="/"
-            className="hover:text-[#D61924] duration-300 ease-linear"
+            className={`hover:text-[#D61924] duration-300 ease-linear ${
+              usePathname() === "/" ? "text-[#D61924]" : "text-black"
+            }`}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="hover:text-[#D61924] duration-300 ease-linear"
+            className={`hover:text-[#D61924] duration-300 ease-linear ${
+              usePathname() === "/about" ? "text-[#D61924]" : "text-black"
+            }`}
           >
             About
           </Link>
           <Link
             href="/portfolio"
-            className="hover:text-[#D61924] duration-300 ease-linear"
+            className={`hover:text-[#D61924] duration-300 ease-linear ${
+              usePathname() === "/portfolio" ? "text-[#D61924]" : "text-black"
+            }`}
           >
             Portfolio
           </Link>
           <Link
             href="/product"
-            className="hover:text-[#D61924] duration-300 ease-linear"
+            className={`hover:text-[#D61924] duration-300 ease-linear ${
+              usePathname() === "/product" ? "text-[#D61924]" : "text-black"
+            }`}
           >
             Product
           </Link>
           <Link
             href="/methodology"
-            className="hover:text-[#D61924] duration-300 ease-linear"
+            className={`hover:text-[#D61924] duration-300 ease-linear ${
+              usePathname() === "/methodology" ? "text-[#D61924]" : "text-black"
+            }`}
           >
             Methodology
           </Link>
           <Link
             href="/article"
-            className="hover:text-[#D61924] duration-300 ease-linear"
+            className={`hover:text-[#D61924] duration-300 ease-linear ${
+              usePathname() === "/article" ? "text-[#D61924]" : "text-black"
+            }`}
           >
             Article
           </Link>
           <Link
             href="/gallery"
-            className="hover:text-[#D61924] duration-300 ease-linear"
+            className={`hover:text-[#D61924] duration-300 ease-linear ${
+              usePathname() === "/gallery" ? "text-[#D61924]" : "text-black"
+            }`}
           >
             Gallery
           </Link>
           <Link
             href="/career"
-            className="hover:text-[#D61924] duration-300 ease-linear"
+            className={`hover:text-[#D61924] duration-300 ease-linear ${
+              usePathname() === "/career" ? "text-[#D61924]" : "text-black"
+            }`}
           >
             Career
           </Link>
